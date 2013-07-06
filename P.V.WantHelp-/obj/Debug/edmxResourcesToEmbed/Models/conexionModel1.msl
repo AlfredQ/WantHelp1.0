@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PlataformaVirtualModelStoreContainer" CdmEntityContainer="PlataformaVirtualEntities">
+    <EntitySetMapping Name="archivos">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.archivos">
+        <MappingFragment StoreEntitySet="archivos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fechas" ColumnName="fechas" />
+          <ScalarProperty Name="idUs" ColumnName="idUs" />
+          <ScalarProperty Name="idSe" ColumnName="idSe" />
+          <ScalarProperty Name="urlBase" ColumnName="urlBase" />
+          <ScalarProperty Name="urlHost" ColumnName="urlHost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="avatar">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.avatar">
+        <MappingFragment StoreEntitySet="avatar">
+          <ScalarProperty Name="id_avatar" ColumnName="id_avatar" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="urlBase" ColumnName="urlBase" />
+          <ScalarProperty Name="urlHost" ColumnName="urlHost" />
+          <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comentarios">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Comentarios">
+        <MappingFragment StoreEntitySet="Comentarios">
+          <ScalarProperty Name="Id_Comentarios" ColumnName="Id_Comentarios" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
+          <ScalarProperty Name="Id_Respuestas" ColumnName="Id_Respuestas" />
+          <ScalarProperty Name="conteo2" ColumnName="conteo2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cursos">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Cursos">
+        <MappingFragment StoreEntitySet="Cursos">
+          <ScalarProperty Name="Id_Curso" ColumnName="Id_Curso" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha_I" ColumnName="Fecha_I" />
+          <ScalarProperty Name="Fecha_F" ColumnName="Fecha_F" />
+          <ScalarProperty Name="urlBase" ColumnName="urlBase" />
+          <ScalarProperty Name="urlHost" ColumnName="urlHost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inscripcion">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.inscripcion">
+        <MappingFragment StoreEntitySet="inscripcion">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idCu" ColumnName="idCu" />
+          <ScalarProperty Name="idUs" ColumnName="idUs" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="Id_Material" ColumnName="Id_Material" />
+          <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
+          <ScalarProperty Name="Id_Curso" ColumnName="Id_Curso" />
+          <ScalarProperty Name="archivos" ColumnName="archivos" />
+          <ScalarProperty Name="urlBase" ColumnName="urlBase" />
+          <ScalarProperty Name="urlHost" ColumnName="urlHost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mensajes">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.mensajes">
+        <MappingFragment StoreEntitySet="mensajes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idSe" ColumnName="idSe" />
+          <ScalarProperty Name="idUs" ColumnName="idUs" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Preguntas">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Preguntas">
+        <MappingFragment StoreEntitySet="Preguntas">
+          <ScalarProperty Name="Id_Preguntas" ColumnName="Id_Preguntas" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
+          <ScalarProperty Name="conteo" ColumnName="conteo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="puntuacionChat">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.puntuacionChat">
+        <MappingFragment StoreEntitySet="puntuacionChat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idMe" ColumnName="idMe" />
+          <ScalarProperty Name="IdUs" ColumnName="IdUs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="puntuacionRes">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.puntuacionRes">
+        <MappingFragment StoreEntitySet="puntuacionRes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idRes" ColumnName="idRes" />
+          <ScalarProperty Name="IdUs" ColumnName="IdUs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuestas">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Respuestas">
+        <MappingFragment StoreEntitySet="Respuestas">
+          <ScalarProperty Name="Id_Respuestas" ColumnName="Id_Respuestas" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
+          <ScalarProperty Name="Id_Preguntas" ColumnName="Id_Preguntas" />
+          <ScalarProperty Name="conteo2" ColumnName="conteo2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuestas_Chat">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Respuestas_Chat">
+        <MappingFragment StoreEntitySet="Respuestas_Chat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idSe" ColumnName="idSe" />
+          <ScalarProperty Name="idChat" ColumnName="idChat" />
+          <ScalarProperty Name="idUs" ColumnName="idUs" />
+          <ScalarProperty Name="mensaje" ColumnName="mensaje" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sesiones">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.sesiones">
+        <MappingFragment StoreEntitySet="sesiones">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="descriocion" ColumnName="descriocion" />
+          <ScalarProperty Name="idCu" ColumnName="idCu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Id_Usu" ColumnName="Id_Usu" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido_P" ColumnName="Apellido_P" />
+          <ScalarProperty Name="Apellido_M" ColumnName="Apellido_M" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_Membership">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.webpages_Membership">
+        <MappingFragment StoreEntitySet="webpages_Membership">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+          <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+          <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_OAuthMembership">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.webpages_OAuthMembership">
+        <MappingFragment StoreEntitySet="webpages_OAuthMembership">
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+          <ScalarProperty Name="ProviderUserId" ColumnName="ProviderUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_Roles">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.webpages_Roles">
+        <MappingFragment StoreEntitySet="webpages_Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_UsersInRoles">
+      <EntityTypeMapping TypeName="PlataformaVirtualModel.webpages_UsersInRoles">
+        <MappingFragment StoreEntitySet="webpages_UsersInRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
